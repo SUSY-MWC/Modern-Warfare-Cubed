@@ -74,7 +74,7 @@ public class ScarHFactory implements GunFactory {
         "Damage: 8", 
         "Cartridge: 7.62x51mm NATO",
         "Fire Rate: SEMI, AUTO",
-        "Rate of Fire: 55/100",
+        "Rate of Fire: 80/100",
         "Magazines:",
         "20rnd 7.62x51mm NATO CQC Magazine",
         "40rnd 7.62x51mm NATO CQC Magazine",
