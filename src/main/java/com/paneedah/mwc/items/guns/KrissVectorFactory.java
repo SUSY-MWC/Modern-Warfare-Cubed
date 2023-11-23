@@ -27,7 +27,7 @@ public class KrissVectorFactory {
 
         .withName("kriss_vector")
         .withFireRate(0.999f)
-        .withRecoil(2.5f)
+        .withRecoil(1.0f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SMG)
         .withShellType(Type.PISTOL)
@@ -55,7 +55,7 @@ public class KrissVectorFactory {
 				// The weapon power
 				15.0,
 				// Muzzle climb divisor
-				15.75,
+				5.75,
 				// "Stock Length"
 				50.0,
 				// Recovery rate from initial shot
