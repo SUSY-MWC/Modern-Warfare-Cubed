@@ -27,7 +27,7 @@ public class ScarHFactory implements GunFactory {
         return new Weapon.Builder()
 
         .withName("scar_h_cqc")
-        .withFireRate(0.55f)
+        .withFireRate(0.80f)
         .withRecoil(4f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.RIFLES)
