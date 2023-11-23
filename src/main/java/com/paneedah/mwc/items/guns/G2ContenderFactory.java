@@ -42,7 +42,7 @@ public class G2ContenderFactory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.09f)
         .withFlashOffsetY(() -> 0.09f)
-        
+        .withInaccuracy(2f)
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Break-Action",
