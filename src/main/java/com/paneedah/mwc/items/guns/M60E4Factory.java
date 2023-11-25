@@ -21,7 +21,7 @@ public class M60E4Factory {
 
         .withName("m60e4")
         .withFireRate(0.6f)
-        .withRecoil(2f)
+        .withRecoil(6f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.HEAVY)
         .withMaxShots(Integer.MAX_VALUE)
@@ -41,7 +41,7 @@ public class M60E4Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.1f)
         .withFlashOffsetY(() -> 0.16f)
-        .withInaccuracy(1f)
+        .withInaccuracy(3f)
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: General-Purpose Machine Gun",
