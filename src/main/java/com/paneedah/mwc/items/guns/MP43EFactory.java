@@ -50,7 +50,7 @@ public class MP43EFactory implements GunFactory {
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Shotgun",
-        "Damage per Pellet: 6",
+        "Damage per Pellet: 3",
         "Pellets per Shot: 10", 
         "Cartridge: 12 Gauge Shotgun Shell",
         "Fire Rate: SEMI ACTION",
@@ -1342,7 +1342,7 @@ public class MP43EFactory implements GunFactory {
                     )
                     
             .build())
-        .withSpawnEntityDamage(6f)
+        .withSpawnEntityDamage(3f)
         .withSpawnEntityGravityVelocity(0.8f)
         
          
