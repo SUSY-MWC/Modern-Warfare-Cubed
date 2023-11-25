@@ -32,7 +32,7 @@ public class M1014Factory implements GunFactory {
         .withIteratedLoad()
         .withEjectSpentRoundSound("pump_action")
         .withFireRate(0.2f)
-        .withRecoil(8f)
+        .withRecoil(10f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SHOTGUN)
         .withShellType(Type.SHOTGUN)
