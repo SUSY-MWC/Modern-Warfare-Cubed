@@ -48,7 +48,7 @@ public class MP40Factory {
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Sub Machine Gun",
-        "Damage: 5", 
+        "Damage: 3", 
         "Cartridge: 9x19mm",
         "Fire Rate: SEMI, AUTO",
         "Rate of Fire: 50/100",
@@ -1513,7 +1513,7 @@ public class MP40Factory {
                     )
              
             .build())
-        .withSpawnEntityDamage(5f)
+        .withSpawnEntityDamage(3f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(MWC.modContext);
