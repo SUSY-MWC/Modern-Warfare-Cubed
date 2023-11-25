@@ -29,7 +29,7 @@ public class Spas12Factory implements GunFactory {
         .withFireRate(0.2f)
         .withIteratedLoad()
         .withFireRate(0.2f)
-        .withRecoil(7f)
+        .withRecoil(12f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SHOTGUN)
         .withShellType(Type.SHOTGUN)
@@ -46,7 +46,7 @@ public class Spas12Factory implements GunFactory {
         .withShellCasingModel(new com.paneedah.mwc.models.Shotgun12Gauge())
         .withShellCasingModelTexture("shotgun12gauge")
         .withCrosshairZoomed("Sight")
-        .withInaccuracy(8)
+        .withInaccuracy(12)
         .withPellets(10)
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)
@@ -55,7 +55,7 @@ public class Spas12Factory implements GunFactory {
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Shotgun",
-        "Damage per Pellet: 6",
+        "Damage per Pellet: 5",
         "Pellets per Shot: 10", 
         "Cartridge: 12 Gauge Shotgun Shell",
         "Fire Rate: SEMI",
@@ -1209,7 +1209,7 @@ public class Spas12Factory implements GunFactory {
                     )
                     
             .build())
-        .withSpawnEntityDamage(6f)
+        .withSpawnEntityDamage(5f)
         .withSpawnEntityGravityVelocity(0.8f)
         
          
