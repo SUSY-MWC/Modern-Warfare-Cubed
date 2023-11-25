@@ -48,7 +48,7 @@ public class KS23Factory implements GunFactory {
         .withShellCasingEjectEnabled(false)
         .withCrosshairZoomed("Sight")
         .withInaccuracy(16)
-        .withPellets(10)
+        .withPellets(8)
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.05f)
@@ -56,7 +56,7 @@ public class KS23Factory implements GunFactory {
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Carbine/Shotgun",
-        "Damage per Pellet: 7.5",
+        "Damage per Pellet: 4.5",
         "Pellets per Shot: 10", 
         "Cartridge: 4 Gauge Shotgun Shell",
         "Fire Rate: PUMP ACTION",
@@ -1438,7 +1438,7 @@ public class KS23Factory implements GunFactory {
                     )
                     
             .build())
-        .withSpawnEntityDamage(7.5f)
+        .withSpawnEntityDamage(4.5f)
         .withSpawnEntityGravityVelocity(0.8f)
         
          
