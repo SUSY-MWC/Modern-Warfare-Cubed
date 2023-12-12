@@ -6,7 +6,6 @@ import com.paneedah.mwc.network.messages.WorkbenchServerMessage;
 import com.paneedah.weaponlib.crafting.CraftingEntry;
 import com.paneedah.weaponlib.crafting.CraftingRegistry;
 import com.paneedah.weaponlib.crafting.IModernCrafting;
-import com.paneedah.weaponlib.crafting.ammopress.TileEntityAmmoPress;
 import com.paneedah.weaponlib.crafting.base.TileEntityStation;
 import com.paneedah.weaponlib.crafting.workbench.TileEntityWorkbench;
 import io.redstudioragnarok.redcore.utils.NetworkUtil;
@@ -42,24 +41,6 @@ public final class WorkbenchServerMessageHandler implements IMessageHandler<Work
                 final TileEntityStation station = (TileEntityStation) tileEntity;
 
                 if (workbenchServerMessage.getOpCode() == WorkbenchServerMessage.CRAFT) {
-                    if (tileEntity instanceof TileEntityAmmoPress) {
-                        // Since it's based on a queue, you can add whatever you'd like, and it will merely refuse to craft it until you have the resources available.
-                        final TileEntityAmmoPress press = (TileEntityAmmoPress) station;
-                        final ItemStack newStack = new ItemStack(CraftingRegistry.getModernCrafting(workbenchServerMessage.getCraftingGroup(), workbenchServerMessage.getCraftingName()).getItem(), workbenchServerMessage.getQuantity());
-
-                        if (press.hasStack()) {
-                            final ItemStack topQueue = press.getCraftingQueue().getLast();
-                            if (ItemStack.areItemsEqualIgnoreDurability(topQueue, newStack))
-                                topQueue.grow(workbenchServerMessage.getQuantity());
-                            else
-                                press.addStack(newStack);
-                        } else
-                            press.addStack(newStack);
-
-                        CHANNEL.sendToAllAround(new WorkbenchClientMessage(station.getWorld(), workbenchServerMessage.getTeLocation()), new TargetPoint(0, workbenchServerMessage.getTeLocation().getX(), workbenchServerMessage.getTeLocation().getY(), workbenchServerMessage.getTeLocation().getZ(), 20));
-
-                        return;
-                    }
 
                     final CraftingEntry[] modernRecipe = CraftingRegistry.getModernCrafting(workbenchServerMessage.getCraftingGroup(), workbenchServerMessage.getCraftingName()).getModernRecipe();
                     if (modernRecipe == null)
@@ -126,13 +107,6 @@ public final class WorkbenchServerMessageHandler implements IMessageHandler<Work
                 } else if (workbenchServerMessage.getOpCode() == WorkbenchServerMessage.MOVE_OUTPUT) {
                     ((EntityPlayer) world.getEntityByID(workbenchServerMessage.getPlayerID())).addItemStackToInventory(station.mainInventory.getStackInSlot(workbenchServerMessage.getSlotToMove()));
                 } else if (workbenchServerMessage.getOpCode() == WorkbenchServerMessage.POP_FROM_QUEUE) {
-                    if (!(tileEntity instanceof TileEntityAmmoPress)) return;
-
-                    final TileEntityAmmoPress teAmmoPress = (TileEntityAmmoPress) tileEntity;
-
-                    if (teAmmoPress.hasStack() && teAmmoPress.getCraftingQueue().size() > workbenchServerMessage.getSlotToMove())
-                        teAmmoPress.getCraftingQueue().remove(workbenchServerMessage.getSlotToMove());
-
                     CHANNEL.sendToAllAround(new WorkbenchClientMessage(station.getWorld(), workbenchServerMessage.getTeLocation()), new TargetPoint(0, workbenchServerMessage.getTeLocation().getX(), workbenchServerMessage.getTeLocation().getY(), workbenchServerMessage.getTeLocation().getZ(), 25));
                 }
             }

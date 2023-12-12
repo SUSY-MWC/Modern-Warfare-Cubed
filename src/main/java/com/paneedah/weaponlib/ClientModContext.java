@@ -4,7 +4,6 @@ import com.paneedah.weaponlib.animation.ScreenShakingAnimationManager;
 import com.paneedah.weaponlib.command.DebugCommand;
 import com.paneedah.weaponlib.command.MainCommand;
 import com.paneedah.weaponlib.compatibility.CompatibleRenderingRegistry;
-import com.paneedah.weaponlib.crafting.ammopress.GUIContainerAmmoPress;
 import com.paneedah.weaponlib.crafting.workbench.GUIContainerWorkbench;
 import com.paneedah.weaponlib.electronics.EntityWirelessCamera;
 import com.paneedah.weaponlib.electronics.WirelessCameraRenderer;
@@ -101,7 +100,6 @@ public class ClientModContext extends CommonModContext {
         this.playerRawPitchAnimationManager = new ScreenShakingAnimationManager();
 
         GUIContainerWorkbench.setModContext(this);
-        GUIContainerAmmoPress.setModContext(this);
     }
 
     @Override

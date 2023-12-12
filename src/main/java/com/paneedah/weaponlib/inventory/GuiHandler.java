@@ -5,9 +5,6 @@ import com.paneedah.mwc.equipment.inventory.carryable.backpack.BackpackContainer
 import com.paneedah.mwc.equipment.inventory.carryable.backpack.BackpackInventory;
 import com.paneedah.mwc.equipment.inventory.carryable.backpack.GuiBackpack;
 import com.paneedah.mwc.capabilities.EquipmentCapability;
-import com.paneedah.weaponlib.crafting.ammopress.ContainerAmmoPress;
-import com.paneedah.weaponlib.crafting.ammopress.GUIContainerAmmoPress;
-import com.paneedah.weaponlib.crafting.ammopress.TileEntityAmmoPress;
 import com.paneedah.weaponlib.crafting.workbench.ContainerWorkbench;
 import com.paneedah.weaponlib.crafting.workbench.GUIContainerWorkbench;
 import com.paneedah.weaponlib.crafting.workbench.TileEntityWorkbench;
@@ -24,7 +21,6 @@ public class GuiHandler implements IGuiHandler {
     public static final int STORAGE_ITEM_INVENTORY_GUI_ID = 1;
     public static final int CUSTOM_PLAYER_INVENTORY_GUI_ID = 2;
     public static final int WORKBENCH_GUI_ID = 3;
-    public static final int AMMOPRESS_GUI_ID = 4;
 
     @Override
     public Object getServerGuiElement(int guiId, EntityPlayer player, World world, int x, int y, int z) {
@@ -44,9 +40,6 @@ public class GuiHandler implements IGuiHandler {
             break;
         case WORKBENCH_GUI_ID:
         	container = new ContainerWorkbench(player, player.inventory, (TileEntityWorkbench) world.getTileEntity(new BlockPos(x, y, z)));
-        	break;
-        case AMMOPRESS_GUI_ID:
-        	container = new ContainerAmmoPress(player, player.inventory, (TileEntityAmmoPress) world.getTileEntity(new BlockPos(x, y, z)));
         	break;
         }
         return container;
@@ -71,9 +64,6 @@ public class GuiHandler implements IGuiHandler {
         case WORKBENCH_GUI_ID:
         	guiContainer = new GUIContainerWorkbench(player, player.inventory, (TileEntityWorkbench) world.getTileEntity(new BlockPos(x, y, z)));
         	
-        	break;
-        case AMMOPRESS_GUI_ID:
-        	guiContainer = new GUIContainerAmmoPress(player, player.inventory, (TileEntityAmmoPress) world.getTileEntity(new BlockPos(x, y, z)));
         	break;
         }
         

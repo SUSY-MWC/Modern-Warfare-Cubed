@@ -7,9 +7,6 @@ import com.paneedah.mwc.init.MWCItems;
 import com.paneedah.mwc.models.Workbench;
 import com.paneedah.mwc.renderer.EquipmentRenderer;
 import com.paneedah.weaponlib.RenderingPhase;
-import com.paneedah.weaponlib.crafting.ammopress.TESRAmmoPress;
-import com.paneedah.weaponlib.crafting.ammopress.TileEntityAmmoPress;
-import com.paneedah.weaponlib.crafting.ammopress.model.AmmoPress;
 import com.paneedah.weaponlib.crafting.workbench.TESRWorkbench;
 import com.paneedah.weaponlib.crafting.workbench.TileEntityWorkbench;
 import com.paneedah.weaponlib.inventory.BackpackInventoryTab;
@@ -48,7 +45,6 @@ public class ClientProxy extends CommonProxy {
         inventoryTabs.registerTab(new BackpackInventoryTab(MWC.modContext));
 
         ClientRegistry.bindTileEntitySpecialRenderer(TileEntityWorkbench.class, new TESRWorkbench(new Workbench(), new ResourceLocation(ID + ":textures/blocks/workbench.png")));
-        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityAmmoPress.class, new TESRAmmoPress(new AmmoPress(), new ResourceLocation(ID + ":textures/blocks/ammo_press.png")));
     }
 
     @Override
