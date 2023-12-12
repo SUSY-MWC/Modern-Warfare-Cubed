@@ -15,8 +15,6 @@ import com.paneedah.weaponlib.compatibility.CompatibleExtraEntityFlags;
 import com.paneedah.weaponlib.compatibility.CompatiblePlayerEntityTrackerProvider;
 import com.paneedah.weaponlib.config.ModernConfigManager;
 import com.paneedah.weaponlib.crafting.RecipeManager;
-import com.paneedah.weaponlib.crafting.ammopress.BlockAmmoPress;
-import com.paneedah.weaponlib.crafting.ammopress.TileEntityAmmoPress;
 import com.paneedah.weaponlib.crafting.workbench.TileEntityWorkbench;
 import com.paneedah.weaponlib.crafting.workbench.WorkbenchBlock;
 import com.paneedah.weaponlib.electronics.*;
@@ -278,22 +276,6 @@ public class CommonModContext implements ModContext {
         ItemBlock workbenchItemBlock = new ItemBlock(workbenchblock);
         this.registerRenderableItem(workbenchblock.getRegistryName(), workbenchItemBlock, null);
 
-        // Ammo press
-		GameRegistry.registerTileEntity(TileEntityAmmoPress.class, ID + ":tileammopress");
-        Block ammopressblock = new BlockAmmoPress(this, "ammo_press", Material.IRON).setCreativeTab(MWC.BLOCKS_AND_INGOTS_TAB);
-
-        if (ammopressblock.getRegistryName() == null) {
-            if (ammopressblock.getTranslationKey().length() < ID.length() + 2 + 5) {
-                throw new IllegalArgumentException("Unlocalize block name too short " + ammopressblock.getTranslationKey());
-            }
-            String unlocalizedName = ammopressblock.getTranslationKey().toLowerCase();
-            String registryName = unlocalizedName.substring(5 + ID.length() + 1);
-            ammopressblock.setRegistryName(ID, registryName);
-        }
-
-        ForgeRegistries.BLOCKS.register(ammopressblock);
-        ItemBlock ammoItemBlock = new ItemBlock(ammopressblock);
-        this.registerRenderableItem(ammopressblock.getRegistryName(), ammoItemBlock, null);
     }
 
     @Override
