@@ -31,7 +31,7 @@ public class ACRFactory implements GunFactory {
 		
 		.withName("acr") // Name of the item and model
 		.withFireRate(0.65f) // Fire rate in rounds per minute
-		.withRecoil(3f) // Recoil in degrees
+		.withRecoil(6f) // Recoil in degrees
 		.withZoom(0.9f) // Zoom factor
 		.withConfigGroup(GunConfigurationGroup.RIFLES) // Config group
 		.withMuzzlePosition(new Vec3d(0.0, -1.076000002264977, -6.227999991893772)) // Muzzle position

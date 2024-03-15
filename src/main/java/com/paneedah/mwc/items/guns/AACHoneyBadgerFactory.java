@@ -28,7 +28,7 @@ public class AACHoneyBadgerFactory implements GunFactory {
                 
                 .withName("aac_honey_badger") // Name of the item and model
                 .withFireRate(0.80f) // Fire rate in rounds per minute
-                .withRecoil(3f) // Recoil in degrees
+                .withRecoil(5f) // Recoil in degrees
                 .withZoom(0.9f) // Zoom factor
                 .withConfigGroup(GunConfigurationGroup.RIFLES) // Config group
                 .withMaxShots(1, Integer.MAX_VALUE) // Max shots per reload
@@ -72,7 +72,7 @@ public class AACHoneyBadgerFactory implements GunFactory {
                 ))
                 .withInformationProvider(stack -> Arrays.asList( // Information provider
                         "Type: Personal Defense Weapon",  // Information
-                        "Damage: 5.4", // Damage in Item Description
+                        "Damage: 3", // Damage in Item Description
                         "Cartridge: 7.62x35mm", // Cartridge in Item Description
                         "Fire Rate: SEMI, AUTO", // Fire Rate in Item Description
                         "Rate of Fire: 70/100", // Rate of Fire in Item Description
@@ -1004,7 +1004,7 @@ public class AACHoneyBadgerFactory implements GunFactory {
                                 }, 250, 0))
 
                         .build())
-                .withSpawnEntityDamage(5.4f)
+                .withSpawnEntityDamage(3f)
                 .withSpawnEntityGravityVelocity(0.0118f)
 
 
