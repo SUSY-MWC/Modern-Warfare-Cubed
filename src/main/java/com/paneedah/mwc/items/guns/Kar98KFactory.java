@@ -53,7 +53,7 @@ public class Kar98KFactory implements GunFactory {
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Bolt-action rifle",
-        "Damage: 13.5",
+        "Damage: 10.5",
         "Cartridge: 7.92x57mm", 
         "Fire Rate: Bolt Action",
         "Rate of Fire: 16/100"))
@@ -2259,7 +2259,7 @@ public class Kar98KFactory implements GunFactory {
                     )
                     
             .build())
-        .withSpawnEntityDamage(13.5f)
+        .withSpawnEntityDamage(10.5f)
         .withSpawnEntityGravityVelocity(0f)
         
          

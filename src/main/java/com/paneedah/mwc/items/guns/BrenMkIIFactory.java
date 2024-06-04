@@ -34,7 +34,7 @@ public class BrenMkIIFactory {
         .withUnloadSound("ak_unload")
         .withInspectSound("inspection")
         .withDrawSound("ak_draw")
-        .withReloadingTime(45)
+        .withReloadingTime(60)
         .withCrosshair("gun")
         .withCrosshairRunning("Running")
         .withCrosshairZoomed("Sight")

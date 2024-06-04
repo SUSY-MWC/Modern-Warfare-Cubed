@@ -24,7 +24,7 @@ public class DP28Factory {
 
         .withName("dp28")
         .withFireRate(0.5f)
-        .withRecoil(4f)
+        .withRecoil(8f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.HEAVY)
         .withMaxShots(1, Integer.MAX_VALUE)
@@ -950,7 +950,7 @@ public class DP28Factory {
                     )
              
             .build())
-        .withSpawnEntityDamage(14f)
+        .withSpawnEntityDamage(9f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(MWC.modContext);

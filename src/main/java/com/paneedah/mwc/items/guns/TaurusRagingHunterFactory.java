@@ -238,7 +238,7 @@ public class TaurusRagingHunterFactory implements GunFactory {
                 })
             
             .build())
-        .withSpawnEntityDamage(11f)
+        .withSpawnEntityDamage(13f)
         .withSpawnEntityGravityVelocity(0.016f)
         
          

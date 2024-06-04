@@ -1286,7 +1286,7 @@ public class Saiga12Factory {
                     )
              
             .build())
-        .withSpawnEntityDamage(6f)
+        .withSpawnEntityDamage(6.5f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(MWC.modContext);

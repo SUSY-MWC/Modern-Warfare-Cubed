@@ -23,7 +23,7 @@ public class M134Factory implements GunFactory {
 
         .withName("m134")
         .withFireRate(0.9999999f)
-        .withRecoil(1f)
+        .withRecoil(12f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.HEAVY)
         .withMaxShots(Integer.MAX_VALUE)
