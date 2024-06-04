@@ -42,7 +42,7 @@ public class MP43EFactory implements GunFactory {
         .withShellCasingEjectEnabled(false)
         .withCrosshairZoomed("Sight")
         .withInaccuracy(10)
-        .withPellets(10)
+        .withPellets(15)
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.09f)
@@ -51,7 +51,7 @@ public class MP43EFactory implements GunFactory {
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Shotgun",
         "Damage per Pellet: 6",
-        "Pellets per Shot: 10", 
+        "Pellets per Shot: 15",
         "Cartridge: 12 Gauge Shotgun Shell",
         "Fire Rate: SEMI ACTION",
         "Rate of Fire: 30/100"))

@@ -26,7 +26,7 @@ public class MaresLegFactory implements GunFactory {
 //      .withCapacity(CommonProxy.Remington870Mag)
         .withAmmoCapacity(6)
         .withMaxBulletsPerReload(6)
-        .withFireRate(0.5f)
+        .withFireRate(0.7f)
         .withEjectRoundRequired()
         .withIteratedLoad()
         .withEjectSpentRoundSound("m1873action")
@@ -50,13 +50,14 @@ public class MaresLegFactory implements GunFactory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.11f)
         .withFlashOffsetY(() -> 0.13f)
+        .withInaccuracy(0.8f)
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Lever Action Rifle",
-        "Damage: 5.5",
+        "Damage: 3.5",
         "Cartridge: .44 Magnum",
         "Fire Rate: LEVER ACTION",
-        "Rate of Fire: 50/100"))
+        "Rate of Fire: 70/100"))
         
         .withScreenShaking(RenderableState.SHOOTING, 
                 4f, // x 
@@ -936,7 +937,7 @@ public class MaresLegFactory implements GunFactory {
                     )
                     
             .build())
-        .withSpawnEntityDamage(5.5f)
+        .withSpawnEntityDamage(3.5f)
         
          
         .build(MWC.modContext);
