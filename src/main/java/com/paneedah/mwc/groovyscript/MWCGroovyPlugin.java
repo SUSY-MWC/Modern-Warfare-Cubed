@@ -7,7 +7,7 @@ import com.paneedah.mwc.groovyscript.script.CraftingStation;
 import static com.paneedah.mwc.utils.ModReference.ID;
 import static com.paneedah.mwc.utils.ModReference.NAME;
 
-public class MWCGroovyPlugin implements GroovyPlugin {
+public abstract class MWCGroovyPlugin implements GroovyPlugin {
 
     public static final CraftingStation craftingStation = new CraftingStation();
 
@@ -21,8 +21,4 @@ public class MWCGroovyPlugin implements GroovyPlugin {
         return NAME;
     }
 
-    @Override
-    public void onCompatLoaded(GroovyContainer<?> groovyContainer) {
-        groovyContainer.getRegistrar().addRegistry(craftingStation);
-    }
 }

@@ -45,7 +45,7 @@ public class BrenMkIIFactory {
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Light Machine Gun",
-        "Damage: 5",
+        "Damage: 2.5",
         "Cartridge: 7.62x51mm",
         "Fire Rate: SEMI, AUTO",
         "Rate of Fire: 50/100",
@@ -1004,7 +1004,7 @@ public class BrenMkIIFactory {
                     )
              
             .build())
-        .withSpawnEntityDamage(5f)
+        .withSpawnEntityDamage(2.5f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(MWC.modContext);

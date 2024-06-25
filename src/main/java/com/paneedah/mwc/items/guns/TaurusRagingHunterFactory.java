@@ -41,7 +41,7 @@ public class TaurusRagingHunterFactory implements GunFactory {
 		.withFlashScale(() -> 0.6f)
 		.withFlashOffsetX(() -> 0.1f)
 		.withFlashOffsetY(() -> 0.15f)
-        .withInaccuracy(2)
+        .withInaccuracy(4)
         .withShellCasingEjectEnabled(false)
         .withCreativeTab(MWC.WEAPONS_TAB)
         .useNewSystem()
@@ -238,7 +238,7 @@ public class TaurusRagingHunterFactory implements GunFactory {
                 })
             
             .build())
-        .withSpawnEntityDamage(13f)
+        .withSpawnEntityDamage(11f)
         .withSpawnEntityGravityVelocity(0.016f)
         
          

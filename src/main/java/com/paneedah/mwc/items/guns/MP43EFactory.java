@@ -42,7 +42,7 @@ public class MP43EFactory implements GunFactory {
         .withShellCasingEjectEnabled(false)
         .withCrosshairZoomed("Sight")
         .withInaccuracy(10)
-        .withPellets(15)
+        .withPellets(10)
         .withFlashIntensity(0.5f)
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.09f)
