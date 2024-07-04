@@ -32,27 +32,6 @@ Simply press your Left and Right arrow keys to navigate between cameras!
 
 ---
 
-
-The **Cubed Development Team** is working hard to keep this project going and maintaining as an open-source project that is free for anyone to use!
-You can support us on [Patreon](https://patreon.com/ModernWarfareCubed)!
-
-All monetary contributions made via Patreon are being put right back into the development of the mod.
-
-[![Patreon](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/patreon-plural_vector.svg)](https://patreon.com/ModernWarfareCubed)
-
-### What can I get from supporting?
-
-You can find out about all the juicy perks that you unlock on our [Discord](https://discord.gg/k5WPk93K7b) (and on our Patreon home-page)!
-But honestly, what more do you need other than our love?
-
-## Need to get in touch?
-
-Our primary way of communicating with the community is through our [Discord Server](https://discord.gg/k5WPk93K7b).
-Join our great community today!
-
-Feel free to send an email to paneedah@panada.cc if you have any concerns, are looking to partner, or need to contact the ownership of Modern Warfare Cubed personally. 
-Please note that this inbox will not reply to any queries or help about the mod itself, please use the discord server for that instead.
-
 ## Contributing
 
 Anyone and everyone is welcome to contribute and help out with the project!
