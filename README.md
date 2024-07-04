@@ -1,9 +1,3 @@
-[![Curse Forge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg)](https://www.curseforge.com/minecraft/mc-mods/modern-warfare-cubed)
-[![Modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg)](https://modrinth.com/mod/modern-warfare-cubed)
-
-[![Patreon](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/donate/patreon-plural_vector.svg)](https://patreon.com/ModernWarfareCubed)
-[![Discord](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_vector.svg)](https://discord.gg/k5WPk93K7b)
-
 # Modern Warfare Cubed
 
 **Modern Warfare Cubed** is a fork of the popular [Vic's Modern Warfare Mod](https://www.curseforge.com/minecraft/mc-mods/vics-modern-warfare-mod) which is now discontinued aiming to improve and expand upon the experience.
@@ -38,12 +32,6 @@ Simply press your Left and Right arrow keys to navigate between cameras!
 
 ---
 
-[![BisectHostingPromoBanner](https://github.com/Cubed-Development/Modern-Warfare-Cubed/assets/82710983/45b8a32b-be1f-4d45-a4c6-08a1c3e2019b)](https://bisecthosting.com/mwc?r=MWC+GitHub)
-
-## Support Us!
-
-Are you enjoying our mod?
-Consider supporting!
 
 The **Cubed Development Team** is working hard to keep this project going and maintaining as an open-source project that is free for anyone to use!
 You can support us on [Patreon](https://patreon.com/ModernWarfareCubed)!
@@ -85,20 +73,12 @@ We wouldn't be where we are now without the support from you all!
 
 ### Official Development Team
 
-- [Paneedah](https://github.com/Paneedah) - Lead Developer
-- [BurnhamR](https://github.com/BurnhamR) - Lead Developer
-- [Luna Lage (Desoroxxx)](https://github.com/JustDesoroxxx) - Head Developer
-- [SticksDev](https://github.com/SticksDeveloper) - Developer
-- [Koud-Wind](https://github.com/Koud-Wind) - Developer
-- [Azurae](https://github.com/azuraerae) - Developer
+
 
 ### Official Design Team
 
-- [Braiam23](https://github.com/Braiam23) - Lead Designer
-- [Medico](https://steamcommunity.com/profiles/76561198908516041/) - Designer
-- [papudinho](https://github.com/le-papudinho) - Designer
-- [.StarKnight](https://twitter.com/Star_SHoT_W) - Designer
+
 
 ### Our Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=Paneedah/Modern-Warfare-Cubed)](https://github.com/Paneedah/Modern-Warfare-Cubed/graphs/contributors)
+
