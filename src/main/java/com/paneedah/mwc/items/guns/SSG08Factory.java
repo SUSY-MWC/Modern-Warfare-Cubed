@@ -47,7 +47,7 @@ public class SSG08Factory implements GunFactory {
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Precision Sniper Rifle",
-        "Damage: 27", 
+        "Damage: 55", 
         "Cartridge: .308 Winchester",
         "Fire Rate: BOLT ACTION",
         "Rate of Fire: 16/100",
@@ -2325,7 +2325,7 @@ public class SSG08Factory implements GunFactory {
                     }, 50, 200))
                     
             .build())
-        .withSpawnEntityDamage(27f)
+        .withSpawnEntityDamage(55f)
         .withSpawnEntityGravityVelocity(0f)
         
          
