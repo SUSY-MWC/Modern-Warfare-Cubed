@@ -28,7 +28,7 @@ public class VSSVintorezFactory {
         return new Weapon.Builder()
 
         .withName("vss_vintorez")
-        .withFireRate(0.7f)
+        .withFireRate(0.6f)
         .withRecoil(1.5f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.LONG_RANGE_RIFLES)
@@ -54,7 +54,7 @@ public class VSSVintorezFactory {
         .useNewSystem()
         .withRecoilParam(new RecoilParam(
 				// The weapon power
-				15.0,
+				9.0,
 				// Muzzle climb divisor
 				15.75,
 				// "Stock Length"
@@ -843,7 +843,7 @@ public class VSSVintorezFactory {
                     }, 280, 0))
              
             .build())
-        .withSpawnEntityDamage(13f)
+        .withSpawnEntityDamage(9f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(MWC.modContext);
