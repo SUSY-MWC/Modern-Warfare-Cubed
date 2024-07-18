@@ -765,7 +765,7 @@ public class MP7Factory {
                     }, 280, 0))
              
             .build())
-        .withSpawnEntityDamage(5.5f)
+        .withSpawnEntityDamage(5.0f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(MWC.modContext);

@@ -23,7 +23,7 @@ public class BrenMkIIFactory {
 
         .withName("bren_mkii")
         .withFireRate(0.5f)
-        .withRecoil(2.5f)
+        .withRecoil(6.5f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.HEAVY)
         .withMaxShots(1, Integer.MAX_VALUE)
@@ -34,7 +34,7 @@ public class BrenMkIIFactory {
         .withUnloadSound("ak_unload")
         .withInspectSound("inspection")
         .withDrawSound("ak_draw")
-        .withReloadingTime(45)
+        .withReloadingTime(60)
         .withCrosshair("gun")
         .withCrosshairRunning("Running")
         .withCrosshairZoomed("Sight")
@@ -45,7 +45,7 @@ public class BrenMkIIFactory {
         .withCreativeTab(MWC.WEAPONS_TAB)
         .withInformationProvider(stack -> Arrays.asList(
         "Type: Light Machine Gun",
-        "Damage: 10", 
+        "Damage: 2.5",
         "Cartridge: 7.62x51mm",
         "Fire Rate: SEMI, AUTO",
         "Rate of Fire: 50/100",
@@ -1004,7 +1004,7 @@ public class BrenMkIIFactory {
                     )
              
             .build())
-        .withSpawnEntityDamage(10f)
+        .withSpawnEntityDamage(2.5f)
         .withSpawnEntityGravityVelocity(0.0118f)
                 
         .build(MWC.modContext);

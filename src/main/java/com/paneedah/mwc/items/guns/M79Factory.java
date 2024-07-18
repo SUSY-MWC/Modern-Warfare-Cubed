@@ -30,7 +30,7 @@ public class M79Factory implements GunFactory {
         //.withMaxShots(5)
         .withShootSound("m79")
         .withReloadSound("m79_reload")
-        .withReloadingTime(50)
+        .withReloadingTime(150)
         .withCrosshair("gun")
         .withCrosshairRunning("Running")
         .withCrosshairZoomed("Sight")
@@ -609,7 +609,7 @@ public class M79Factory implements GunFactory {
             .withSpawnEntityDamage(70f)
             .withSpawnEntityGravityVelocity(0.3f)
             .withSpawnEntitySpeed(5f)
-            .withSpawnEntityExplosionRadius(4f)
+            .withSpawnEntityExplosionRadius(0.1f)
             .build(MWC.modContext);
         }
     }

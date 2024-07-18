@@ -34,7 +34,7 @@ public class ImpactGrenadeFactory implements GrenadeFactory {
                 .withGravityVelocity(() -> 0.06f)
                 .withRotationSlowdownFactor(() -> 0.99f)
                 .withExplosionOnImpact()
-                .withDestroyingBlocks(false)
+                .withDestroyingBlocks(true)
                 .withModernRecipe(
                         CraftingGroup.GRENADE,
                         new CraftingEntry(MWCItems.steelIngot, 2),

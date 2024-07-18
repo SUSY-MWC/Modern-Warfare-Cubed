@@ -31,7 +31,7 @@ public class M1897Factory implements GunFactory {
 		.withEjectSpentRoundSound("m1897_pump")
         .withPumpTimeout(750)
         .withFireRate(0.1f)
-        .withRecoil(9f)
+        .withRecoil(12f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SHOTGUN)
         .withMaxShots(1)
@@ -1405,7 +1405,7 @@ public class M1897Factory implements GunFactory {
                     )
 					
 			.build())
-		.withSpawnEntityDamage(6f)
+		.withSpawnEntityDamage(8f)
 		.withSpawnEntityGravityVelocity(0.8f)
 		
 		 

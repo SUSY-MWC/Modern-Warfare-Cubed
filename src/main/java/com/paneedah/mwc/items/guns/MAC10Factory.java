@@ -30,7 +30,7 @@ public class MAC10Factory {
 
         .withName("mac10")
         .withFireRate(0.999f)
-        .withRecoil(1f)
+        .withRecoil(8f)
         .withZoom(0.9f)
         .withConfigGroup(GunConfigurationGroup.SMG)
         .withShellType(Type.PISTOL)
@@ -51,7 +51,7 @@ public class MAC10Factory {
         .withFlashScale(() -> 0.6f)
         .withFlashOffsetX(() -> 0.16f)
         .withFlashOffsetY(() -> 0.16f)
-        .withInaccuracy(3f)
+        .withInaccuracy(6f)
         .withCreativeTab(MWC.WEAPONS_TAB)
         .useNewSystem()
         .withRecoilParam(new RecoilParam(

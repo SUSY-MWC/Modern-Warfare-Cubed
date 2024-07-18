@@ -25,7 +25,7 @@ public class M4A1Factory implements GunFactory {
 		.withName("m4a1")
 		//.withAmmoCapacity(30)
 		.withFireRate(0.75f)
-		.withRecoil(3f)
+		.withRecoil(5f)
 		.withZoom(0.9f)
 		.withConfigGroup(GunConfigurationGroup.RIFLES)
 		.hasFlashPedals()
@@ -52,7 +52,7 @@ public class M4A1Factory implements GunFactory {
 		.useNewSystem()
 		.withRecoilParam(new RecoilParam(
 				// The weapon power
-				15.0,
+				7.0,
 				// Muzzle climb divisor
 				15.75,
 				// "Stock Length"
@@ -1518,7 +1518,7 @@ public class M4A1Factory implements GunFactory {
                     }, 250, 0))
 					
 			.build())
-		.withSpawnEntityDamage(6f)
+		.withSpawnEntityDamage(7f)
 		.withSpawnEntityGravityVelocity(0.0118f)
 				
 		 
